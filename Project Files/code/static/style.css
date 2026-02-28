@@ -1,0 +1,48 @@
+h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;  
+    background-repeat: no-repeat;
+}
+
+.google-font {
+    font-family: 'Share Tech Mono', sans-serif; 
+    color: white;
+    padding: 20px;
+}
+
+.buttons {
+    position: absolute;
+    top: 20px;  
+    right: 20px;
+}
+
+.buttons a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px; 
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 20px;
+    color: white;
+    max-width: 600px;  
+}
+
+button {
+    color: white;
+    background: none;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+}

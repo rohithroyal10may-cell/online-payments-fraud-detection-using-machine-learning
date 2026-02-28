@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+
+    <link rel="stylesheet" href="https://www.dafont.com/techno-2.font">
+
+    <link rel="icon" href="static/logo.png" type="image/png">
+
+    <title>Online Payments Fraud Detection - Team ID PNT2023TMID592341</title>
+</head>
+<body style="background-image: url('/static/background.jpg');">
+    <h1 class="google-font">Online Payments Fraud Detection</h1>
+    <div class="content google-font">
+        <p> Refer the below indices for the respective type of transactions and use them in the input field.</p>
+        <p> 'CASH_IN': 0, 'CASH_OUT': 1, 'DEBIT': 2, 'PAYMENT': 3, 'TRANSFER': 4 </p>
+
+        <br>
+
+        <form action="{{ url_for('predict') }}" method="post">
+            <label for="step">Step:</label><br>
+            <input type="text" name="step" required><br><br>
+
+            <label for="type">Type:</label><br>
+            <input type="text" name="type" required><br><br>
+
+            <label for="amount">Amount:</label><br>
+            <input type="text" name="amount" required><br><br>
+
+            <label for="oldbalanceOrg">Old Balance Org:</label><br>
+            <input type="text" name="oldbalanceOrg" required><br><br>
+
+            <label for="newbalanceOrig">New Balance Orig:</label><br>
+            <input type="text" name="newbalanceOrig" required><br><br>
+
+            <label for="oldbalanceDest">Old Balance Dest:</label><br>
+            <input type="text" name="oldbalanceDest" required><br><br>
+
+            <label for="newbalanceDest">New Balance Dest:</label><br>
+            <input type="text" name="newbalanceDest" required><br><br>
+
+            <button class="google-font" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="buttons google-font">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('predict') }}">Predict</a>
+    </div>
+</body>
+</html>

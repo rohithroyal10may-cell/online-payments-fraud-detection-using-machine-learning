@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+
+    <link rel="stylesheet" href="https://www.dafont.com/techno-2.font">
+
+    <link rel="icon" href="static/logo.png" type="image/png">
+
+    <title>Online Payments Fraud Detection - Team ID PNT2023TMID592341</title>
+</head>
+<body style="background-image: url('/static/background.jpg');">
+    <h1 class="google-font">Online Payments Fraud Detection</h1>
+    <div class="content google-font">
+        The Online Payments Fraud Detection project addresses the growing concerns 
+            related to the surge in online credit/debit card transactions, which has 
+            concurrently led to an increase in fraudulent activities. 
+            
+            Recognizing the need for effective fraud detection, our solution employs machine learning 
+            classification algorithms, including Decision Tree, Random Forest, SVM, 
+            Extra Tree Classifier, and XGBoost Classifier. This diverse set of algorithms 
+            aims to enhance accuracy and overcome specific drawbacks associated with 
+            traditional approaches. By leveraging these algorithms, we predict and further 
+            process potential frauds, particularly focusing on detecting changes in 
+            transaction behavior. 
+            
+            The proposed method becomes crucial in handling the 
+            substantial volume of data inherent in credit/debit card transactions. After 
+            training and testing the data with various algorithms, the model exhibiting 
+            the highest performance is selected and saved in a pkl format. To ensure 
+            practical usability, we integrate this predictive model with a Flask web 
+            application, providing users with a seamless and intuitive interface for 
+            real-time fraud detection, thereby fortifying the security of online payment 
+            systems.
+    </div>
+    <div class="buttons google-font">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('predict') }}">Predict</a>
+    </div>
+</body>
+</html>
